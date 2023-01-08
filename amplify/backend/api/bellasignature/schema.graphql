@@ -1,0 +1,53 @@
+type User @model 
+@key(name:"byEmail",fields:["email"],queryField:"getUserByEmail") 
+
+@auth(rules:[
+    { allow: owner },
+      { allow: private, operations: [read] }
+
+
+]) {
+  id: ID!
+  username: String!
+  email:String!
+  profilePicUrl:String!
+  posts: [Post] @connection
+}
+type Post @model 
+
+@auth(rules:[
+    { allow: owner },
+      { allow: private, operations: [read] }
+
+
+])
+{
+  id: ID!
+  userID:ID!
+  postText: String!
+  postImageUrl:String!
+  status:Status!
+
+  user: User @connection(fields:["userID"])
+  comments: [Comment]
+}
+type Comment @model 
+@auth(rules:[
+    { allow: owner },
+      { allow: private, operations: [read] }
+
+
+]) {
+  id: ID!
+  commentText: String!
+  postID:ID!
+  userID:ID!
+  post: Post @connection(fields:["postID"])
+  user:User @connection(fields:["userID"])
+}
+
+enum Status {
+  CREATED
+  UPDATED
+  DELETED
+}

@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bellasignature-dev-195644-authRole",
+      "UnauthRoleArn": "arn:aws:iam::119206587974:role/amplify-bellasignature-dev-195644-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::119206587974:role/amplify-bellasignature-dev-195644-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-bellasignature-dev-195644-deployment",
+      "UnauthRoleName": "amplify-bellasignature-dev-195644-unauthRole",
+      "StackName": "amplify-bellasignature-dev-195644",
+      "StackId": "arn:aws:cloudformation:us-east-1:119206587974:stack/amplify-bellasignature-dev-195644/0a1ed7b0-8ebd-11ed-8e3c-0ec5b82fbad9",
+      "AmplifyAppId": "d1w1l6nlgm64ko"
+    },
+    "categories": {
+      "auth": {
+        "bellasignature4267f333": {},
+        "bellasignature82788fef": {}
+      }
+    }
+  }
+}

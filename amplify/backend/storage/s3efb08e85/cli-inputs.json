@@ -1,0 +1,18 @@
+{
+  "resourceName": "s3efb08e85",
+  "policyUUID": "efb08e85",
+  "bucketName": "bellasignature02cacbd606b547318e6557cc38c3e2d9",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Trigger310c90aa",
+  "groupAccess": {}
+}
